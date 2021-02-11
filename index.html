@@ -12,17 +12,27 @@
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero"><h1><span>MR</span>DZWIGI</h1></a>
-          <!-- <a href="http://mrdzwigi.eu/%22%3E"><img src="http://mrdzwigi.eu/wp-content/themes/mrdzwigi_2017/img/logo.svg" width="143" height="27" alt="Testowa witryna"></a> -->
+          <!-- <a href="#hero"><h1><span>MR</span>DZWIGI</h1></a> -->
+          <a href="http://mrdzwigi.eu/%22%3E"><img src="http://www.mrdzwigi.com.pl/wp-content/themes/mrdzwigi2015/img/logo.png" width="150" height="30" alt="Testowa witryna"></a>
         </div>
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
           <ul>
-            <li><a href="#hero" data-after="Home">Strona główna</a></li>
-            <li><a href="#services" data-after="Service">Budownictwo przemysłowe</a></li>
-            <li><a href="#projects" data-after="Projects">Wynajem sprzętu</a></li>
-            <li><a href="#about" data-after="About">O nas</a></li>
-            <li><a href="#contact" data-after="Contact">Kontakt</a></li>
+            <li class="dropdown"><a href="#hero"  data-after="Strona główna">Strona główna</a></li>
+            <li class="dropdown"><a href="#services" class="dropdown" data-after="Budownictwo">Budownictwo przemysłowe</a>
+              <div class="dropdown-content">
+                <a>Portfolio</a>
+                <a>Dział techniczny</a>
+                <a>Polecane firmy</a>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#projects" class="dropdown" data-after="Wynajem">Wynajem sprzętu</a>
+              <div class="dropdown-content">
+                <a>Dział techniczny</a>
+              </div>
+            </li>
+            <li class="dropdown"><a href="#about" class="dropdown" data-after="O nas">O nas</a></li>
+            <li class="dropdown"><a href="#contact" class="dropdown" data-after="Kontakt">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -144,14 +154,14 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
+          <img src="./img/background.jpg" alt="img">
         </div>
       </div>
       <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
+        <h1 class="section-title">O <span>nas</span></h1>
+        <h2>MRDZWIGI</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
+        <a href="#" class="cta">Dowiedz się więcej</a>
       </div>
     </div>
   </section>
@@ -160,29 +170,32 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div><h1 class="section-title">Nasz <span>kontakt</span></h1></div>
       <div class="contact-items">
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
           <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
+            <h1>Telefon</h1>
+            <h2>+48 123 456 798</h2>
+            <h2>+12 987 654 321</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
+            <h2>mrdzwigi@gmail.com</h2>
+            <h2>biuro@mrdzwigi.com.pl</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
           <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+            <h1>Adres</h1>
+            <h2>MR Dźwigi s.c.<br>
+              G. Mączyński K. Rupiński<br>
+              ul. Wyspiańskiego 6 <br>
+              07-300 Ostrów Mazowiecka</h2>
           </div>
         </div>
       </div>
@@ -193,23 +206,17 @@
   <!-- Footer -->
   <section id="footer">
     <div class="footer container">
-      <div class="brand"><h1><span>S</span>haif <span>A</span>rfan</h1></div>
-      <h2>Your Complete Web Solution</h2>
+      <div class="brand"><h1><span>MR </span>DZWIGI</h1></div>
+      <h2>Zadowolony klient, to nasz cel</h2>
       <div class="social-icon">
+        <!-- <div class="social-item">
+          <a href="#"><img src="#"/></a>
+        </div> -->
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+          <a href="#">Polityka prywatności</a>
         </div>
       </div>
-      <p>Copyright © 2020 Arfan. All rights reserved</p>
+      <p>Copyright © 1995-2021 M.R. Dźwigi s.c. Wszelkie prawa zastrzeżone</p>
     </div>
   </section>
   <!-- End Footer -->
