@@ -362,7 +362,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#FFBA00;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#D5ACBB; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#5e4e54; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:#ffbb005d;/* #95103B */ border-color:rgba(0,0,0,.6);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#D5ACBB; background-color:#FFBA00;}
 #mainav form select{color:#474747; background-color:#FFFFFF;}
