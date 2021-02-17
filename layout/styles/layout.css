@@ -289,6 +289,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#FFBA00;}
 
 .imgover:hover::before{background:rgba(0,0,0,.55);}
 .imgover, .imgover:hover::after{color:#FFBA00;}
+.imgover p {opacity: 0; position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%);font-weight: bold;margin-top: 20%;}
+.imgover:hover p {opacity: 1;}
 
 
 /* Rows */
