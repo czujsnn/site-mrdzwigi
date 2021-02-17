@@ -41,6 +41,12 @@ File: Layout CSS
 
 #header div:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
 
+.header-no-capitalize{
+	font-size:2.5rem;
+	color:#FFFFFF;
+	text-transform: none;
+}
+
 
 /* Search Form
 --------------------------------------------------------------------------------------------------------------- */
@@ -126,7 +132,7 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 #footer{padding:80px 0;}
 
-#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+#footer .heading{margin-bottom:50px; font-size:2.5rem;}
 
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
@@ -142,6 +148,15 @@ File: Layout CSS
 .latestimg > li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
 .latestimg > li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
 .latestimg > li img{width:100%;}/* Force the image to resize to take the full space - may have to be changed for tablets, depends on personal preference */
+
+.footer-down{
+	position:absolute;
+	bottom: 0;
+}
+
+.kontakt{
+	font-size: 1.5rem;
+}
 
 
 /* Copyright
