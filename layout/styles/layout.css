@@ -360,7 +360,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#FFBA00;}
 #footer input:focus{border-color:#FFBA00;}
 #footer button{color:#FFFFFF; background-color:#FFBA00;}
 
-
 /* Navigation */
 #mainav li a{color:inherit;}
 #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#D5ACBB; background-color:inherit;}
