@@ -251,7 +251,7 @@ table, th{table-layout:auto;}
 table{width:100%; margin-bottom:15px;}
 th, td{padding:5px 8px;}
 td{border-width:0 1px;}
-
+.sticky{position: fixed;width: 100%;left: 0;top: 0;z-index: 100;border-top: 0;}
 
 /* Gallery
 --------------------------------------------------------------------------------------------------------------- */
@@ -306,7 +306,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#FFBA00;}
 .imgover, .imgover:hover::after{color:#FFBA00;}
 .imgover p {opacity: 0; position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%);font-weight: bold;margin-top: 20%;}
 .imgover:hover p {opacity: 1;}
-
+/* .one_quarter .imgover {width: 250px;height: 250px; object-fit: cover;} */
 
 /* Rows */
 .row0{color:#474747; background-color:#F4F4F4;}
