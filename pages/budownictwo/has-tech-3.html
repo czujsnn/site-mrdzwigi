@@ -1,15 +1,26 @@
 <!DOCTYPE html>
+<!--
+Template Name: Wavefire
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
 <html lang="pl">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-<title>Dźwigi</title>
+<title>Dz. Techniczny</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" type="image/png" href="../../images/favico.png">
 <style type="text/css">
-
+/* DEMO ONLY */
 .container .demo{text-align:center;}
 .container .demo div{padding:8px 0;}
-
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
 @media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
 /* DEMO ONLY */
 </style>
@@ -52,22 +63,21 @@
         <li><a class="drop" href="../../index.html">O nas</a>
           <ul>
             <li><a href="../gallery/1.html">Portfolio</a></li>
-            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="../basic-grid.html">Basic Grid</a></li>
           </ul>
         </li>
         <li><a class="drop" href="#">Budownictwo przemysłowe</a>
           <ul>
-            <li><a href="../tech.html">Dział techniczny</a></li>
+            <li><a href="../dzial-techniczny.html">Dział techniczny</a></li>
             <li><a class="drop" href="#">Polecane firmy</a>
               <ul>
-                <li><a href="#">Firma 1</a></li>
-                <li><a href="#">Firma 2</a></li>
+                <li><a href="../firmy/nazwa-firmy-1.html">Firma 1</a></li>
+                <li><a href="../firmy/nazwa-firmy-2.html">Firma 2</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a class="active" href="./dzwigi.html">Wynajem Sprzętu</a>
-        </li>
+        <li><a class="active" href="../eqrental/wynajem.html">Wynajem Sprzętu</a>
         <li><a href="../kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
@@ -77,14 +87,15 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay" style="background-image:url('./bg4.jpg">
+<div class="wrapper bgded overlay" style="background-image:url('../../images/2011_Rolstal Mleczarnia Lukow/DSC06153.JPG');">
   <div id="breadcrumb" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <h6 class="heading">Wynajem Sprzętu</h6>
+    <h6 class="heading">Hasło 3</h6>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Wynajem Sprzętu</a></li>
-
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./dzial-techniczny.html">Budownictwo przemysłowe</a></li>
+      <li><a href="./dzial-techniczny.html">Dział techniczny</a></li>
+      <li><a href="#">Hasło 3</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </div>
@@ -95,27 +106,66 @@
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
+    <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content"> 
+    <div class="sidebar one_quarter first"> 
       <!-- ################################################################################################ -->
-      <h2 class="center-wynajem">Wynajem Sprzętu</h2>
-      <p>tutaj jakis madry opis bo pusto tak bez niego ://</p>
-      <!-- ################################################################################################ -->
-      <div class="group btmspace-50 demo">
-        <div class="one_half first">
-          <a href="./zurawie.html" class="imgover"><img src="lewe.jpeg"><p>Żurawie samochodowe</p></a>
-        </div>
-
-        <div class="one_half">
-          <a href="./pozostaly.html" class="imgover"><img src="prawe.jpg"><p>Pozostały Sprzęt</p></a>
-        </div>
-      </div>
-      <!-- ################################################################################################ -->
-      
+      <h6>Lista haseł</h6>
+      <nav class="sdb_holder">
+        <ul>
+          <li><a href="./has-tech-1.html">Hasło techniczne 1</a></li>
+          <li><a href="./has-tech-2.html">Hasło techniczne 2</a>
+            <ul>
+              <li><a href="#">Podasło techniczne</a></li>
+              <li><a href="#">Podasło techniczne</a></li>
+            </ul>
+          </li>
+          <li><a href="./has-tech-3.html">Hasło techniczne 3</a></li>
+          <li><a href="./has-tech-4.html">Hasło techniczne 4</a></li>
+        </ul>
+      </nav>
       <!-- ################################################################################################ -->
     </div>
     <!-- ################################################################################################ -->
-    <!-- / main body -->
+    <!-- ################################################################################################ -->
+    <div class="content three_quarter"> 
+      <!-- ################################################################################################ -->
+      <h1>Tytuł hasła głównego</h1>
+      <img class="imgr borderedbox inspace-5" src="../../images/2018_Trio/THUMBNAIL_resized_2_IMG_20180511_164742.jpg" alt="">
+      <p>Paragraf opisu</p>
+      <p>Drugi paragraf opisu</p>
+      <p>Więcej tekstu tutaj</p>
+      <h1>Tabla porównań</h1>
+      <div class="scrollable">
+        <table>
+          <thead>
+            <tr>
+              <th>Wart 1</th>
+              <th>Wart 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Wartość z odnosnikiem</a></td>
+              <td>Porównanie 2</td>
+            </tr>
+            <tr>
+              <td>Value 5</td>
+              <td>Value 6</td>
+            </tr>
+            <tr>
+              <td>Value 9</td>
+              <td>Value 10</td>
+            </tr>
+            <tr>
+              <td>Value 13</td>
+              <td><a href="#">Value 14</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
     <div class="clear"></div>
   </main>
 </div>
@@ -171,9 +221,9 @@
 <!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
-<script src="../layout/scripts/jquery.min.js"></script>
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-<script src="../layout/scripts/jquery.stickynavbar.js"></script>
+<script src="../../layout/scripts/jquery.min.js"></script>
+<script src="../../layout/scripts/jquery.backtotop.js"></script>
+<script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../../layout/scripts/jquery.stickynavbar.js"></script>
 </body>
 </html>

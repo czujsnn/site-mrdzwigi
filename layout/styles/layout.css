@@ -14,12 +14,12 @@ File: Layout CSS
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
-.row0, .row0 a{}
+/* .row0, .row0 a{}
 .row1, .row1 a{}
 .row2, .row2 a{}
 .row3, .row3 a{}
 .row4, .row4 a{}
-.row5, .row5 a{}
+.row5, .row5 a{} */
 
 
 /* Header
@@ -32,8 +32,8 @@ File: Layout CSS
 #header #logo h1::before{bottom:3px;}
 #header #logo h1 span{text-transform:uppercase;}
 
-#header ul{}
-#header ul li{}
+/* #header ul{}
+#header ul li{} */
 #header ul li div{position:relative; min-height:30px; padding:0 0 0 35px; line-height:1;}
 #header ul li div i{position:absolute; top:0; left:0; width:25px; height:23px; font-size:20px; text-align:center;}
 #header ul li div span{display:block;}
@@ -78,7 +78,7 @@ File: Layout CSS
 .container{padding:80px 0;}
 
 /* Content */
-.container .content{}
+/* .container .content{} */
 
 .sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
 .sectiontitle *{margin:0;}
@@ -88,7 +88,7 @@ File: Layout CSS
 .ringcon::before{display:block; position:absolute; top:20px; left:20px; width:120px; height:120px; border:2px solid; content:"";}
 .ringcon i{display:block; position:relative; width:160px; height:160px; line-height:160px; font-size:50px;}
 
-.overview{}
+/* .overview{} */
 .overview > li{margin-bottom:50px;}
 .overview > li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
 .overview > li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
@@ -113,7 +113,7 @@ File: Layout CSS
 #comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
 
 /* Sidebar */
-.container .sidebar{}
+/* .container .sidebar{} */
 
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
@@ -122,7 +122,7 @@ File: Layout CSS
 /* Latest
 --------------------------------------------------------------------------------------------------------------- */
 #latest{margin-bottom:80px;}
-#latest article{}
+/* #latest article{} */
 #latest article img{width:100%;}/* Force the image to have the full width of parent at all times */
 #latest article .heading{font-size:1.3rem;}
 #latest article .excerpt{padding:20px; border:solid; border-width:0 1px 1px 1px;}
@@ -143,7 +143,7 @@ File: Layout CSS
 #footer input{display:block; width:100%; padding:8px;}
 #footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
 
-.latestimg{}
+/* .latestimg{} */
 .latestimg > li{display:inline-block; float:left; width:30%; margin:0 0 5% 5%;}
 .latestimg > li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
 .latestimg > li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
@@ -268,7 +268,7 @@ td{border-width:0 1px;}
 .faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
 
 .faico a{color:#FFFFFF; background-color:#2A2D34;}
-.faico a:hover{}
+/* .faico a:hover{} */
 
 .faicon-dribble:hover{background-color:#EA4C89;}
 .faicon-facebook:hover{background-color:#3B5998;}
@@ -416,21 +416,21 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:978px){
 	.hoc{max-width:90%;}
 
-	#header{}
+	/* #header{} */
 
 	#mainav{width:80%; padding:15px 0 0 0;}
 	#mainav ul{display:none;}
 	#mainav form{display:block;}
 
-	#breadcrumb{}
+	/* #breadcrumb{} */
 
-	.container{}
+	/* .container{} */
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
-	#footer{}
+	/* #footer{} */
 
-	#copyright{}
+	/* #copyright{} */
 	#copyright p:first-of-type{margin-bottom:10px;}
 }
 
@@ -1042,19 +1042,16 @@ Main Components
 }
 
 /* fade style */
-
 .container-fade {
   position: relative;
   height: 100%;
   width:100%
 }
-
 .image-fade {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .overlay-fade {
   position: absolute;
   top: 0;
@@ -1067,11 +1064,9 @@ Main Components
   transition: .5s ease;
   background-color: #FFBA00;
 }
-
 .container-fade:hover .overlay-fade {
   opacity: 1;
 }
-
 .text-fade {
   font-family:Verdana, Geneva, sans-serif;
   color: rgb(0, 0, 0);
@@ -1084,5 +1079,83 @@ Main Components
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 /* koniec fade style */
+/* Portfolio */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* End of Portfolio */

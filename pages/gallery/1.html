@@ -14,6 +14,128 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" type="image/png" href="../../images/favico.png">
+<style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .row > .column {
+    padding: 0 8px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 25%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  img {
+    margin-bottom: -4px;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  </style>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -52,22 +174,22 @@ Licence URI: https://www.os-templates.com/template-terms
         <li class="active"><a href="../../index.html">Home</a></li>
         <li><a class="drop" href="../../index.html">O nas</a>
           <ul>
-            <li><a href="./gallery/1.html">Portfolio</a></li>
+            <li><a href="./1.html">Portfolio</a></li>
             <li><a href="../basic-grid.html">Basic Grid</a></li>
           </ul>
         </li>
         <li><a class="drop" href="#">Budownictwo przemysłowe</a>
           <ul>
-            <li><a href="../tech.html">Dział techniczny</a></li>
+            <li><a href="../dzial-techniczny.html">Dział techniczny</a></li>
             <li><a class="drop" href="#">Polecane firmy</a>
               <ul>
-                <li><a href="#">Firma 1</a></li>
-                <li><a href="#">Firma 2</a></li>
+                <li><a href="../firmy/nazwa-firmy-1.html">Firma 1</a></li>
+                <li><a href="../firmy/nazwa-firmy-2.html">Firma 2</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a class="active" href="../eqrental/dzwigi.html">Wynajem Sprzętu</a>
+        <li><a class="active" href="../eqrental/wynajem.html">Wynajem Sprzętu</a>
         <li><a href="../kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
@@ -102,21 +224,26 @@ Licence URI: https://www.os-templates.com/template-terms
         <figure>
           <header class="heading">Galeria</header>
           <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2007_Hala Annopol/DSC01853.JPG"><p>2007 Hala Annopol</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2008_Rolstal Hala Kietlanka/20080409051.jpg" alt=""><p>2008 Rolstal Hala Kietlanka</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2008_Rolstal Hala Koryczany/DSC03819.JPG" alt=""><p>2008 Rolstal Hala Koryczany</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2008_Rolstal Hala Swidnica/DSC03936.JPG" alt=""><p>2008 Rolstal Hala Swidnica</p></a></li>
-            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2008_Rolstal Lochow Sala Gimnastyczna/DSC00153.JPG" alt=""><p>2008 Rolstal Lochow Sala Gimnastyczna</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2008_ZPK Rupinscy Kutyski/DSC03652.JPG" alt=""><p>2008 ZPK Rupinscy Kutyski</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2010_Rolstal Graco/ABCD0004.JPG" alt=""><p>2010 Rolstal Graco</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Brembo Dabrowa Gornicza/Zdjecie0108.jpg" width="250px" height="190px" object-fit="cover" alt=""><p>2011 Brembo Dabrowa Gornicza</p></a></li>
-            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2011_Rolstal Cetco Szczytno/DSC00022.JPG" alt=""><p>2011 Rolstal Cetco Szczytno</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Rolstal Mleczarnia Lukow/DSC06116.JPG" alt=""><p>2011 Rolstal Mleczarnia Lukow</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Rolstal MurDach Grajewo/20110906091.jpg" alt=""><p>2011 Rolstal MurDach Grajewo</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Rolstal Smak Molski Sokolow Podlaski/20110611037.jpg" alt=""><p>2011 Rolstal Smak Molski Sokolow Podlaski</p></a></li>
+            <li class="one_quarter first"><a id="myImg" href="#" class="imgover"><img src="../../images/2007_Hala Annopol/THUMBNAIL_resized_1_DSC01853.JPG"><p>2007 Hala Annopol</p></a></li>
+            <li class="one_quarter"><a id="myImg" href="#" class="imgover"><img src="../../images/2008_Rolstal Hala Kietlanka/THUMBNAIL_resized_1_20080409051.jpg" alt=""><p>2008 Rolstal Hala Kietlanka</p></a></li>
+            <li class="one_quarter"><a id="myImg" href="#" class="imgover"><img src="../../images/2008_Rolstal Hala Koryczany/THUMBNAIL_resized_1_DSC03819.JPG" alt=""><p>2008 Rolstal Hala Koryczany</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2008_Rolstal Hala Swidnica/THUMBNAIL_resized_1_DSC03936.JPG" alt=""><p>2008 Rolstal Hala Swidnica</p></a></li>
+            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2008_Rolstal Lochow Sala Gimnastyczna/THUMBNAIL_resized_4_Zdjecie0100.jpg" alt=""><p>2008 Rolstal Lochow Sala Gimnastyczna</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2008_ZPK Rupinscy Kutyski/THUMBNAIL_resized_2_DSC03661.JPG" alt=""><p>2008 ZPK Rupinscy Kutyski</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2010_Rolstal Graco/THUMBNAIL_resized_1_ABCD0004.JPG" alt=""><p>2010 Rolstal Graco</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Brembo Dabrowa Gornicza/THUMBNAIL_resized_2_Zdjecie0108.jpg" width="250px" height="190px" object-fit="cover" alt=""><p>2011 Brembo Dabrowa Gornicza</p></a></li>
+            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2011_Rolstal Cetco Szczytno/THUMBNAIL_resized_3_DSC00061.JPG" alt=""><p>2011 Rolstal Cetco Szczytno</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Rolstal Mleczarnia Lukow/THUMBNAIL_resized_1_DSC06116.JPG" alt=""><p>2011 Rolstal Mleczarnia Lukow</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Rolstal MurDach Grajewo/THUMBNAIL_resized_7_20110909121.jpg" alt=""><p>2011 Rolstal MurDach Grajewo</p></a></li>
+            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2011_Rolstal Smak Molski Sokolow Podlaski/THUMBNAIL_resized_6_20110625077.jpg" alt=""><p>2011 Rolstal Smak Molski Sokolow Podlaski</p></a></li>
           </ul>
           <figcaption>Opis galerii - strona 1</figcaption>
         </figure>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
       </div>
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
@@ -197,5 +324,43 @@ Licence URI: https://www.os-templates.com/template-terms
 <script src="../../layout/scripts/jquery.backtotop.js"></script>
 <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
 <script src="../../layout/scripts/jquery.stickynavbar.js"></script>
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
 </body>
 </html>
