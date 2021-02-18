@@ -128,19 +128,49 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row2">
-  <main class="hoc container clear"> 
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="#">Linia czasu</h6>
-      <p>Jakaś linia czasu:</p>
-      <hr>
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
+<p class="center">Linia Czasu wybranych lat</p>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">2011</div></li>
+		<li class="step step02"><div class="step-inner">2013</div></li>
+		<li class="step step03"><div class="step-inner">2015</div></li>
+		<li class="step step04"><div class="step-inner">2017</div></li>
+		<li class="step step05"><div class="step-inner">2019</div></li>
+	</ul>
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>HOME SECTION</h2>
+    <img src="./images/2011_Brembo Dabrowa Gornicza/Zdjecie0107 (1).jpg" width="300" height="300" alt="Testowa witryna">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>GALLERY SECTION</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>Creative CREATIONS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>TESTIMONIALS NOW</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>OUR LOCATIONS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+	</div>
+	</div>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -255,5 +285,41 @@ Licence URI: https://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.stickynavbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
 </body>
 </html>
