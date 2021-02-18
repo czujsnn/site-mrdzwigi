@@ -302,7 +302,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#FFBA00;}
 .btn, .btn.inverse:hover{color:#FFFFFF; background-color:#FFBA00; border-color:#FFBA00;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
-.imgover:hover::before{background:rgba(0,0,0,.55);}
+.imgover:hover::before{background:rgba(0, 0, 0, 0.671);}
 .imgover, .imgover:hover::after{color:#FFBA00;}
 .imgover p {opacity: 0; position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%);font-weight: bold;margin-top: 20%;}
 .imgover:hover p {opacity: 1;}
@@ -1036,3 +1036,53 @@ Main Components
 	}
 }
 
+.center-wynajem{
+  text-align: center;
+  font-size: 4rem;
+}
+
+/* fade style */
+
+.container-fade {
+  position: relative;
+  height: 100%;
+  width:100%
+}
+
+.image-fade {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFBA00;
+}
+
+.container-fade:hover .overlay-fade {
+  opacity: 1;
+}
+
+.text-fade {
+  font-family:Verdana, Geneva, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* koniec fade style */
