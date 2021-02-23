@@ -13,8 +13,37 @@ Licence URI: https://www.os-templates.com/template-terms
 <title>Galeria</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<link rel="icon" type="image/png" href="../../images/favico.png">
+<link href="../../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" type="image/png" href="../../../images/favico.png">
+<style>
+    img {vertical-align: middle; width: 50%;} 
+    .container {position: relative; width: 100%;}
+    .mySlides {display: none;}
+    .cursor {cursor: pointer;}
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .next {right: 0; border-radius: 3px 0 0 3px;}
+    .prev:hover,.next:hover {background-color: rgba(0, 0, 0, 0.8);}
+    .numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+    .caption-container {text-align: center; background-color: #1f1f1f; padding: 2px 16px; color: white; font-size: 1.9rem; height: 70px;}
+    .row:after {content: ""; display: table; clear: both;}
+    /* TUTAJ ZMIENIAĆ WARTOŚĆ DLA KOLUMN >:C */
+    .column {float: left; width: 25%;}
+    .demo {opacity: 0.6;}
+    .active, .demo:hover {opacity: 1;}
+    </style>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -24,7 +53,7 @@ Licence URI: https://www.os-templates.com/template-terms
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="one_quarter first">
-      <h1><a href="../../index.html"><img src="../../images/logo.png" width="150" height="30" alt="Testowa witryna"></a></h1>
+      <h1><a href="../../../index.html"><img src="../../../images/logo.png" width="150" height="30" alt="Testowa witryna"></a></h1>
     </div>
     <div class="three_quarter">
       <ul class="nospace clear">
@@ -50,26 +79,26 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <nav id="mainav">
       <ul class="clear">
-        <li class="active"><a href="../../index.html">Home</a></li>
-        <li><a class="drop" href="../../index.html">O nas</a>
+        <li class="active"><a href="../../../index.html">Home</a></li>
+        <li><a class="drop" href="../../../index.html">O nas</a>
           <ul>
-            <li><a href="./1.html">Portfolio</a></li>
-            <li><a href="../basic-grid.html">Basic Grid</a></li>
+            <li><a href="../1.html">Portfolio</a></li>
+            <li><a href="../../basic-grid.html">Basic Grid</a></li>
           </ul>
         </li>
         <li><a class="drop" href="#">Budownictwo przemysłowe</a>
           <ul>
-            <li><a href="../dzial-techniczny.htmll">Dział techniczny</a></li>
+            <li><a href="../../dzial-techniczny.html">Dział techniczny</a></li>
             <li><a class="drop" href="#">Polecane firmy</a>
               <ul>
-                <li><a href="../firmy/nazwa-firmy-1.html">Firma 1</a></li>
-                <li><a href="../firmy/nazwa-firmy-2.html">Firma 2</a></li>
+                <li><a href="../../firmy/nazwa-firmy-1.html">Firma 1</a></li>
+                <li><a href="../../firmy/nazwa-firmy-2.html">Firma 2</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a class="active" href="../eqrental/wynajem.html">Wynajem Sprzętu</a>
-        <li><a href="../kontakt.html">Kontakt</a></li>
+        <li><a class="active" href="../../eqrental/wynajem.html">Wynajem Sprzętu</a>
+        <li><a href="../../kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
     <!-- ################################################################################################ -->
@@ -78,14 +107,15 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay" style="background-image:url('../../images/gallery/bg.jpg');">
+<div class="wrapper bgded overlay" style="background-image:url('../../../images/gallery/bg.jpg');">
   <div id="breadcrumb" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <h6 class="heading">Galeria</h6>
     <ul>
-      <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../index.html">O nas</a></li>
-      <li><a href="./1page.html">Portfolio</a></li>
+      <li><a href="../../../index.html">Home</a></li>
+      <li><a href="../../../index.html">O nas</a></li>
+      <li><a href="../1.html">Portfolio</a></li>
+      <li><a href="#">Hala Annopol</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </div>
@@ -100,32 +130,58 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="content"> 
       <!-- ################################################################################################ -->
       <div id="gallery">
-        <figure>
-          <header class="heading">Galeria</header>
-          <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2017_ZPK Szumowo/THUMBNAIL_resized_1_IMG_20171107_152056.jpg"><p>2017 ZPK Szumowo</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2018_Gdzies/THUMBNAIL_resized_1_20181212_085545.jpg" alt=""><p>2018 Gdzies</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2018_TMW Wyszków/THUMBNAIL_resized_5_IMG_20190121_115325.jpg" alt=""><p>2018 TMW Wyszków</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2018_Trio/THUMBNAIL_resized_2_IMG_20180511_164742.jpg" alt=""><p>2018 Trio</p></a></li>
-            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2018_Wawa_Honda/THUMBNAIL_resized_1_20180702_120603.jpg" alt=""><p>2018 Wawa Honda</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2018_Wyszków_wisniewski/THUMBNAIL_resized_2_20180221_101218.jpg" alt=""><p>2018 Wyszków Wiśniewski</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2019_Zakłady Mięsne Somianka/THUMBNAIL_resized_4_IMG_20190726_162123.jpg" alt=""><p>2019 Zakłady Mięsne Somianka</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2019_Blattin_Fundam_ostroleka/THUMBNAIL_resized_1_20190401_173201.jpg" alt=""><p>2019 Blattin Fundam Ostrołęka</p></a></li>
-            <li class="one_quarter first"><a href="#" class="imgover"><img src="../../images/2019_Czyżew/THUMBNAIL_resized_4_IMG_20190207_072754.jpg" alt=""><p>2019 Czyżew</p></a></li>
-            <li class="one_quarter"><a href="#" class="imgover"><img src="../../images/2019_Zagranica/THUMBNAIL_resized_6_20190819_121007.jpg" alt=""><p>2019 Zagranica</p></a></li>
-          </ul>
-          <figcaption>Opis galerii - strona 4</figcaption>
-        </figure>
+        <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="../../../images/2008_Rolstal Hala Kietlanka/JPEG/20080409051.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="../../../images/2008_Rolstal Hala Kietlanka/JPEG/20080409058.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="../../../images/2008_Rolstal Hala Kietlanka/JPEG/20080409059.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="../../../images/2008_Rolstal Hala Kietlanka/JPEG/Zdjecie0142.jpg" style="width:100%">
+              </div>
+              
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="../../../images/2007_Hala Annopol/JPEG/DSC01853.jpg" style="width:100%" onclick="currentSlide(1)" alt="Rolstal Hala Kietlanka 2008 rok">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../../../images/2007_Hala Annopol/JPEG/DSC01873.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rolstal Hala Kietlanka 2008 rok">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../../../images/2007_Hala Annopol/JPEG/DSC01853.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rolstal Hala Kietlanka 2008 rok">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../../../images/2007_Hala Annopol/JPEG/DSC01873.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rolstal Hala Kietlanka 2008 rok">
+              </div>
+            </div>
+          </div>
       </div>
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
       <nav class="pagination">
         <ul>
-          <li><a href="./1.html">&laquo; </a></li>
-          <li><a href="./1.html">1</a></li>
-          <li><a href="./2.html">2</a></li>
-          <li><a href="./2.html">3</a></li>
-          <li class="current"><a href="./4.html"><strong>4</strong></a></li>
+          <li ><a href="./2007_Hala Annopol.html">&laquo; </a></li>
+          <li class="current"><a href="#">Rolstal Hala Kietlanka</a></li>
+          <li><a href="./2008_Rolstal Hala Koryczany.html"> &raquo;</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
@@ -191,9 +247,10 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
-<script src="../../layout/scripts/jquery.min.js"></script>
-<script src="../../layout/scripts/jquery.backtotop.js"></script>
-<script src="../../layout/scripts/jquery.mobilemenu.js"></script>
-<script src="../../layout/scripts/jquery.stickynavbar.js"></script>
+<script src="../../../layout/scripts/jquery.min.js"></script>
+<script src="../../../layout/scripts/jquery.backtotop.js"></script>
+<script src="../../../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../../../layout/scripts/jquery.stickynavbar.js"></script>
+<script src="../../../layout/scripts/jquery.slideshowgallery.js"></script>
 </body>
 </html>
