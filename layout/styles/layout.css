@@ -78,7 +78,8 @@ File: Layout CSS
 .container{padding:80px 0;}
 
 /* Content */
-.container .content{align-content: center; align-items: center;}
+/* .content{} */
+/* .container .content{} */
 
 .sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
 .sectiontitle *{margin:0;}
@@ -255,7 +256,7 @@ td{border-width:0 1px;}
 
 /* Gallery
 --------------------------------------------------------------------------------------------------------------- */
-#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery{position: relative; display:block; width:100%; margin-bottom:50px;}
 #gallery figure figcaption{display:block; width:100%; clear:both;}
 #gallery li{margin-bottom:30px;}
 
@@ -424,7 +425,7 @@ table a, #comments a{background-color:inherit;}
 
 	/* #breadcrumb{} */
 
-	/* .container{} */
+	/* .container{position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%);} */
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
