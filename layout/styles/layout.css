@@ -35,8 +35,8 @@ File: Layout CSS
 /* #header ul{}
 #header ul li{} */
 #header ul li div{position:relative; min-height:30px; padding:0 0 0 35px; line-height:1;}
-#header ul li div i{position:absolute; top:0; left:0; width:25px; height:23px; font-size:20px; text-align:center;}
-#header ul li div span{display:block;}
+#header ul li div i{position:absolute; top:50%; left:0; width:25px; height:23px; font-size:40px; text-align:center;}
+#header ul li div span{display:block; top: 50%; left: 30%; position: absolute;}
 #header ul li div strong{display:block; margin:0 0 8px 0;}
 
 #header div:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
